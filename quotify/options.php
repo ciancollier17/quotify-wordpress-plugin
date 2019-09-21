@@ -61,7 +61,7 @@
 
       echo "<select name='quotify_settings_menu[category]'>";
 
-      $categories_file = fopen(plugins_url("test-wp-plugin/categories.dat"), "r") or die("ERROR: Could Not Open Quotify Categories.dat File!");
+      $categories_file = fopen(plugins_url("quotify/categories.dat"), "r") or die("ERROR: Could Not Open Quotify Categories.dat File!");
 
       while (!feof($categories_file)) {
         $category = fgets($categories_file);

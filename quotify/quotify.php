@@ -6,6 +6,7 @@
   Version: 1.0
 */
 
+// Include Simple HTML DOM Library (http://simplehtmldom.sourceforge.io) for parsing of BrainyQuote HTML
 include_once("includes/simple_html_dom.php");
 include_once("options.php");
 
@@ -16,7 +17,7 @@ class Quotify {
   }
 
   function register_plugin_styles () {
-    wp_register_style('quotify', plugins_url('test-wp-plugin/styles/main.css'));
+    wp_register_style('quotify', plugins_url('quotify/styles/main.css'));
     wp_enqueue_style('quotify');
   }
 
